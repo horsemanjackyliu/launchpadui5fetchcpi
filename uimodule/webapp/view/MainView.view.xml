@@ -1,0 +1,20 @@
+<mvc:View controllerName="com.sap.myui5app1.controller.MainView" xmlns:mvc="sap.ui.core.mvc"  displayBlock="true" xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+          <VBox id="vbox">
+            <HBox id="hbox">
+              <Label id="l1" text="Route Test"/>
+             <!-- <Text id="name" text="{item.name}"></Text> -->
+              <Button id="stcpi" text="Send To Cpi" press="sendToCpi" />
+
+              <Input id="input"
+      value="{/item/name}"
+      description="Hello {/item/name}"
+      valueLiveUpdate="true"
+      width="60%"/>
+
+            </HBox>
+         </VBox>
+        </content>
+    </Page>
+</mvc:View>
